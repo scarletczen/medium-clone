@@ -15,7 +15,7 @@ export default function Home({ posts }: Props) {
     <div className="mx-auto max-w-7xl">
       <Head>
         <title>Medium Blog</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/images/medium-logo.png" />
       </Head>
       <Header />
       <div className="flex items-center justify-between border-y border-black bg-yellow-400 py-10 lg:py-0">
@@ -50,8 +50,12 @@ export default function Home({ posts }: Props) {
               <div className="flex justify-between bg-white p-5">
                 <div>
                   <p className="text-lg font-bold">{post.title}</p>
-                  <p className="text-xs">
-                    {post.description} by {post.author.name}
+                  <p className="text-sm">
+                    {post.description}
+                    <div>
+                      by{' '}
+                      <span className="text-green-600">{post.author.name}</span>
+                    </div>
                   </p>
                 </div>
                 <img

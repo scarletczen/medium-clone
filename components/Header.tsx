@@ -14,7 +14,7 @@ function Header() {
         <div className="hidden items-center space-x-5 md:inline-flex">
           <h3>About</h3>
           <h3>Contact</h3>
-          <h3 className="rounder-full bg-green-600 px-4 py-1 text-white">
+          <h3 className="rounded-full bg-green-600 px-4 py-1 text-white">
             Follow
           </h3>
         </div>
